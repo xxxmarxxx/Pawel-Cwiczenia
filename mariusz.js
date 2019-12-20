@@ -1,4 +1,5 @@
 
+"user strick"
 
 const wiek = 18; // stala nie ziemnna
 
@@ -38,7 +39,7 @@ console.log((A+B) >= C ? `A + B jesz wieksze od ${C}` : `A + B jest miejsze od $
 
 let AAA = 20;
 if (AAA >= 20 && AAA <= 40 && AAA !== 22) {  // 1 wieksze lub rowne !== nierownosc ===rownosc
-    console.log(`poddana liczba ${AAA} jest w przedziale`)
+    console.log(`poddana liczba ${AAA} jest w przedziale`) // && musza sie wszystkie zapytania argumenty zgadzac bo inaczej bedzie false
 }
 else {
     console.log(`poddana liczba ${AAA} nie jest w przedziale`)
@@ -46,9 +47,58 @@ else {
 
 let CCC = 16;
 let DDD = 8;
-if ((CCC + DDD) === 8 || (CCC -DDD)===8) {
+if ((CCC + DDD) === 8 || (CCC - DDD )=== 8) {  
     console.log(true)
-} 
+}                           // tu moze sie zgadzac tylko 1 argument wartosc i bedzie true
 else {
     console.log(false)
+}
+let swiatlo = "zielone";
+
+if (swiatlo === "czerwone") {
+    console.log("stoj")
+}
+else if (swiatlo === "zolte") { //
+    console.log("zwolnij")
+}
+
+else if (swiatlo === "zielone") { //
+    console.log("jedz")
+}
+else{
+    console.log("sygnalizacja nie dziala")
+}
+
+let medal = "brazo";
+switch(medal){
+case "zloty" :
+console.log("masz zloty medal");
+break;
+case "srebrny" :
+console.log("masz medal srebrny")
+break;
+case "brazowy" :
+console.log("masz brazowy")
+break;
+default:
+console.log("nie zdobyles medalu")
+break;
+
+}
+
+let koszulka = "zolta";
+switch(koszulka){
+case "czarna" :
+console.log("kosztuje 1€");
+break;
+case "biala" :
+console.log("kosztuje 8€")
+break;
+case "zolta" :
+console.log("kosztuje 15€")
+break;
+default:
+console.log("nie takiej koszulki")
+break;
+
 }
