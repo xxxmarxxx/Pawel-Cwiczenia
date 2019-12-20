@@ -104,7 +104,7 @@ break;
 }
 
 
-function mar(string) { // FUNKCJA MUSI MIEC NAZWE I PARAMETR W NAWIASIE(JEST PUSTY NIE Z  DEFINIOWANY)
+function mar(string) { // FUNKCJA MUSI MIEC NAZWE I PARAMETR W NAWIASIE(JEST PUSTY NIE ZDEFINIOWANY)
     return string.charAt(3)
 }
 let X = "bayern"; // TU JEST DEFINICJA PARAMETRU 
@@ -118,3 +118,11 @@ function paw(AAAA) {
 }
 let Y = ["apple", "orange", "banana"]
 console.log(paw(Y))
+
+let mar1 = (string) => string.charAt(3)
+let z = "bayern"; 
+console.log(mar1(z)) 
+
+let paw2 = (AAAA) => AAAA.slice(-2)[0]
+let Ys = ["apple", "orange", "banana"]
+console.log(paw2(Ys))
