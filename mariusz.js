@@ -102,3 +102,19 @@ console.log("nie takiej koszulki")
 break;
 
 }
+
+
+function mar(string) { // FUNKCJA MUSI MIEC NAZWE I PARAMETR W NAWIASIE(JEST PUSTY NIE Z  DEFINIOWANY)
+    return string.charAt(3)
+}
+let X = "bayern"; // TU JEST DEFINICJA PARAMETRU 
+console.log(mar(X)) // A TU JEST WYWOLANIE FUNKCJI I PODSTAWIENIE PARAMETRU
+
+// function paw(AAAA) {
+//     return AAAA[AAAA.length -2];
+
+function paw(AAAA) {
+    return AAAA.slice(-1)[0]// inna wersja nawias
+}
+let Y = ["apple", "orange", "banana"]
+console.log(paw(Y))
