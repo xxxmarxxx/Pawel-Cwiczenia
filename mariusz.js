@@ -126,3 +126,16 @@ console.log(mar1(z))
 let paw2 = (AAAA) => AAAA.slice(-2)[0]
 let Ys = ["apple", "orange", "banana"]
 console.log(paw2(Ys))
+
+
+
+let losowanie =(tablica) => {
+    let result = "";
+    for (let i = 0; i < 4; i++){
+    let test = tablica[(Math.floor(Math.random()* tablica.length))]
+    result = result + " " + test 
+    }
+    return result
+}
+let imiona = ["MARIUSZ","PAWEL","MARCO","SUSKI","GEAL","MAJID", "VIKTORIA", "VATIH","VADIM","MELAD","SIMONA","ANDREAS","KINAN"]
+console.log(losowanie(imiona))
